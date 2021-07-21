@@ -10,8 +10,8 @@
 import {mapState} from 'vuex';
 import TableComponent from './TableComponent';
 import EventBus from './EventBus';
-export default {
 import store from './store';
+export default {
   store,
   components: {
     TableComponent,
