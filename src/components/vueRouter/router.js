@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import LottoGenerator from "@/components/LottoGenerator";
 import TieTactoe from "@/components/TieTactoe";
+import GameMatcher from "@/components/vueRouter/GameMatcher";
 
 Vue.use(VueRouter);
 
@@ -10,5 +11,6 @@ export default new VueRouter({
     routes:[
         {path: '/lotto-generator', component: LottoGenerator},
         {path: '/tic', component: TieTactoe},
+        {path: '/game/:name', component: GameMatcher}  // game/baseball, game/lotto....
     ]
 });
