@@ -2,6 +2,12 @@
   <div>
     <div>{{turn}}님의 턴입니다.</div>
     <table-component :table-data="tableData" />
+<!--    <table-component :table-data="tableData" >-->
+<!--      <tr v-for="(rowData, rowIndex) in tableData" :key="rowIndex">-->
+<!--        <td></td>-->
+<!--      </tr>-->
+<!--    </table-component>-->
+<!--    이런식으로 table-component안에 태그들이 들어간것을 tableComponent.vue에서 <slot>으로 넘겨줄 수 있다. -->
     <div v-if="winner">{{winner}}님의 승리!</div>
   </div>
 </template>
